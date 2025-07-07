@@ -7,7 +7,6 @@
   line-height: 20px;
 }
 
-/* === HEADER === */
 .header {
   background-color: #ffffff;
   background-image: url("../images/background_header.svg");
@@ -107,7 +106,6 @@
   margin: 0 0 5px;
 }
 
-/* === RECIPES === */
 .recipes {
   background-color: #0a2750;
   background-image: url("../images/background_recipes.svg");
@@ -163,7 +161,6 @@
   margin-top: 12px;
 }
 
-/* === RESERVATION === */
 .reservation {
   min-height: 400px;
   background-image: url("../images/background_reservation.svg");

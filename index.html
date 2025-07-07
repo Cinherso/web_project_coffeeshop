@@ -1,36 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Descubre la Cafetería de Cinthia: tu destino ideal para café de especialidad y un ambiente acogedor. Disfruta de bebidas y postres artesanales."
-    />
-    <meta name="author" content="Cinthia" />
-    <meta
-      name="keywords"
-      content="cafetería, café, Cinthia, especialidad, postres, bebidas, ambiente, acogedor"
-    />
-    <title>Cafetería de Cinthia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Disfruta del mejor café, en nuestra cafetería."
+    />
+    <meta name="author" content="Cinthia Hernandez Sotelo" />
+    <meta name="keywords" content="cafetería, café, postres" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Cafetería</title>
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo dark"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#recipes">Recetas</a></li>
+            <li>
+              <a class="nav__link" href="#reservation">Reservar una mesa</a>
+            </li>
+            <li><a class="nav__link" href="#footer">Contactos</a></li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <h1 class="header__title">
+            <span class="span-accent">Café de especialidad</span><br />
+            <span class="header__title-subtitle">en Triple Peaks</span>
+          </h1>
+          <p class="header__description">
+            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+            para darte energía y motivar tu creatividad.
+          </p>
+        </div>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Ilustración coffe"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div class="header__time">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sábados y Domingos (de 11:00h a 18:00h)
+            </p>
+            <p class="header__paragraph">
+              Avenida del Éxito 200, Ciudad Triple Peaks
+            </p>
+          </div>
+        </div>
+      </header>
+
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Recetas</h2>
+          <p class="recipes__subtitle">
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks.
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__video-item">
+              <div>
+                <iframe
+                  class="recipes__iframe"
+                  src="https://www.youtube.com/embed/j6VlT_jUVPc"
+                  title="Receta en Aeropress"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <div class="recipes__video-caption">
+                  <p>Receta en Aeropress</p>
+                  <p>~5 min</p>
+                </div>
+              </div>
+              <div>
+                <iframe
+                  class="recipes__iframe"
+                  src="https://www.youtube.com/embed/st571DYYTR8"
+                  title="Receta en cafetera francesa"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <div class="recipes__video-caption">
+                  <p>Receta en cafetera francesa</p>
+                  <p>~15 min</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reserva tu mesa</h2>
+          <p class="reservation__subtitle">
+            Planea tu visita con nosotros y asegura tu lugar en nuestra
+            cafetería.
+          </p>
+          <!-- Aquí iría el contenido de reserva -->
+        </section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer class="footer" id="footer">
+        <!-- Contenido del footer -->
+      </footer>
     </div>
   </body>
 </html>

@@ -101,7 +101,85 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+
+          <form
+            class="reservation__form form"
+            name="reservation-form"
+            novalidate
+          >
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Nombre *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__input"
+                placeholder="Nombre"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label for="guests" class="form__label"
+                >Número de comensales *</label
+              >
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                class="form__input"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label for="date" class="form__label">Fecha y hora *</label>
+              <input
+                type="datetime-local"
+                id="date"
+                name="date"
+                class="form__input"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label for="email" class="form__label"
+                >Tu correo electrónico *</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset_type_checkbox">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                class="form__checkbox"
+                required
+              />
+              <label for="terms" class="form__checkbox-label">
+                Acepto los términos de uso
+              </label>
+            </fieldset>
+
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
+          </form>
+        </section>
       </main>
 
       <footer class="footer" id="footer"></footer>
